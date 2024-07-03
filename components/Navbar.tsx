@@ -2,7 +2,7 @@ import { FloatingNav } from "./ui/floating-navbar";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="z-40">
       <FloatingNav navItems={navItems} />
     </div>
   );

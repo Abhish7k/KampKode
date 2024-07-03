@@ -67,7 +67,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "fixed top-10 inset-x-0 mx-5 md:mx-10 px-[40px] py-4 flex items-center justify-between bg-[##D9D9D903] bg-opacity-20 rounded-[20px] shadow-navbar ",
+          "z-40 fixed top-5 inset-x-0 md:mx-10 px-[40px] py-4 flex items-center justify-between bg-white bg-opacity-0 backdrop-blur-sm rounded-[20px] md:shadow-navbar",
           className
         )}
       >
@@ -88,7 +88,7 @@ export const FloatingNav = ({
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative hidden lg:flex items-center gap-1 font-medium hover:text-gray-700 transition-all"
+                "relative hidden lg:flex items-center gap-1 text-lg font-medium hover:text-gray-700 transition-all"
               )}
             >
               <span className="">{navItem.name}</span>
@@ -101,7 +101,7 @@ export const FloatingNav = ({
 
         {/* cta btns */}
         <div className="transition-all">
-          <div className="flex md:hidden transition-all">
+          <div className="z-[5000] flex md:hidden transition-all">
             <Sheet>
               <SheetTrigger>
                 <Menu />
