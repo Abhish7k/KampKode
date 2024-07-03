@@ -55,17 +55,17 @@ export const FloatingNav = ({
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        initial={{
-          opacity: 1,
-          y: -100,
-        }}
-        animate={{
-          y: visible ? 0 : -100,
-          opacity: visible ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.2,
-        }}
+        // initial={{
+        //   opacity: 1,
+        //   y: -100,
+        // }}
+        // animate={{
+        //   y: visible ? 0 : -100,
+        //   opacity: visible ? 1 : 0,
+        // }}
+        // transition={{
+        //   duration: 0.2,
+        // }}
         className={cn(
           "z-40 fixed top-5 inset-x-0 md:mx-10 px-[40px] py-4 flex items-center justify-between bg-white bg-opacity-0 backdrop-blur-sm rounded-[20px] md:shadow-navbar",
           className
@@ -73,12 +73,14 @@ export const FloatingNav = ({
       >
         {/* logo */}
         <div className="text-2xl font-medium">
-          <h1>
+          <div className="flex">
             <span className="text-[#7F6EFC]">N</span>
             AV
-            <span className="text-[#7F6EFC]">B</span>
-            AR
-          </h1>
+            <div className="hidden md:block">
+              <span className="text-[#7F6EFC]">B</span>
+              AR
+            </div>
+          </div>
         </div>
 
         {/* nav links */}
