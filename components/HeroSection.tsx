@@ -37,7 +37,7 @@ export default function HeroSection() {
           </div>
 
           {/* cta btns  */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+          <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-2">
             <Button
               variant="outline"
               size="lg"
@@ -48,7 +48,7 @@ export default function HeroSection() {
             </Button>
             <Button
               size="lg"
-              className="px-24 md:px-6 text-lg font-semibold bg-[#7F6EFC] text-white hover:bg-purple-600 transition-all"
+              className="px-24 md:px-6 text-lg font-semibold bg-[#7F6EFC] text-white hover:bg-purple-600 "
             >
               Join Now
             </Button>
